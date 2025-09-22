@@ -7,7 +7,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sermas-eu/sermas-api.git"
+    "url": "https://github.com/gcspindox/sermas-api.git"
   },
   "scripts": {
     "prebuild": "rimraf dist",

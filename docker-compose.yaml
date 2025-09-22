@@ -12,7 +12,7 @@ services:
           - api
           - sermas-toolkit-api-api-1
       vipp_dev:
-    image: ghcr.io/sermas-eu/api:dev
+    image: ghcr.io/gcspindox/api:dev
     build: .
     volumes:
       - ./:/app
