@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import {
-  SermasApiConfig,
-  SermasDefaultConfig,
-} from 'libs/sermas/sermas.defaults';
+  VippstarApiConfig,
+  VippstarDefaultConfig,
+} from 'libs/sermas/vippstar.defaults';
 
 @Module({
   imports: [
@@ -13,8 +13,10 @@ import {
         ? [process.env.ENV_PATH]
         : ['.env.production', '.env.staging', '.env.test', '.env'],
       load: [
-        (): Partial<SermasApiConfig> => {
-          const defaults: Partial<SermasApiConfig> = { ...SermasDefaultConfig };
+        (): Partial<VippstarApiConfig> => {
+          const defaults: Partial<VippstarApiConfig> = {
+            ...VippstarDefaultConfig,
+          };
           Object.keys(defaults).forEach((key) => {
             if (process.env[key] !== undefined) {
               delete defaults[key];

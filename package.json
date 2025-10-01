@@ -29,7 +29,7 @@
     "@crawlee/cheerio": "^3.10.2",
     "@crawlee/puppeteer": "^3.10.2",
     "@crawlee/types": "^3.10.2",
-    "@google-cloud/speech": "^6.5.0",
+    "@google-cloud/speech": "^6.7.1",
     "@google-cloud/text-to-speech": "^5.2.0",
     "@google-cloud/vertexai": "^1.9.3",
     "@google/generative-ai": "^0.1.3",

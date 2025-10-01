@@ -1,6 +1,6 @@
 import { getConfigPath } from './sermas.utils';
 
-export const SermasDefaultConfig = {
+export const VippstarDefaultConfig = {
   // IMPORT_USER default user used when importing apps
   IMPORT_USER: 'admin',
   // API_URL public API url
@@ -9,7 +9,7 @@ export const SermasDefaultConfig = {
   API_URL_INTERNAL: 'http://127.0.0.1:3000/api',
 
   // MONGODB_URI mongodb connection url
-  MONGODB_URI: 'mongodb://mongodb:27017/sermas',
+  MONGODB_URI: 'mongodb://mongodb:27017/vippstar',
 
   // AUTH_KEYCLOAK_URL set the keycloack endpoint URL
   AUTH_KEYCLOAK_URL: 'http://172.17.0.1:8080/keycloak',
@@ -20,7 +20,7 @@ export const SermasDefaultConfig = {
   // AUTH_KEYCLOAK_ADMIN_URL set the keycloack admin URL. Required from keycloak v26.x
   AUTH_KEYCLOAK_ADMIN_URL: 'http://172.17.0.1:8080/keycloak-admin',
   // AUTH_KEYCLOAK_REALM set the keycloack realm
-  AUTH_KEYCLOAK_REALM: 'sermas-local',
+  AUTH_KEYCLOAK_REALM: 'vippstar-local',
   // AUTH_KEYCLOAK_CLIENT_ID set the keycloack client ID used for administrative purposes
   AUTH_KEYCLOAK_CLIENT_ID: 'platform',
   // AUTH_KEYCLOAK_SECRET set the keycloack client password used for administrative purposes
@@ -292,4 +292,4 @@ export const SermasDefaultConfig = {
   SESSION_EXPIRATION_SEC: 5 * 60, // 5 min
 };
 
-export type SermasApiConfig = typeof SermasDefaultConfig;
+export type VippstarApiConfig = typeof VippstarDefaultConfig;
